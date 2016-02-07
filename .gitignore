@@ -1,0 +1,5 @@
+# Ignore the IDE's build directory
+bin/
+
+# Ignore the `.idea/` folder
+.idea/
