@@ -8,6 +8,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O3")
 add_executable(wikihopping main.cpp get_internal_links.cpp find_path.cpp link_count.cpp)
 
 include_directories(/usr/local/include)
-link_directories(/usr/local/lib)
+find_library(GUMBO gumbo /usr/local/lib)
 
-target_link_libraries(wikihopping libgumbo.dylib curl)
+target_link_libraries(wikihopping ${GUMBO} curl)
