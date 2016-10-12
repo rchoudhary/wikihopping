@@ -18,7 +18,7 @@ using namespace std;
 bool findPath(Link start, Link target, unordered_map<string, Node>* linkGraph)
 {
     // get the maximum number of threads that can be used
-    const int NUM_THREADS = thread::hardware_concurrency();
+    const int NUM_THREADS = (int)(thread::hardware_concurrency() * 1.5);
 
     // start by inserting the starting node into the graph
     linkGraph->insert(make_pair(start.href, Node {start, nullptr, 0}));
