@@ -29,7 +29,7 @@ This will generate the following output
 
 (Of course, the output will look different if it fails and the time taken depends on your internet connection's speed)
 
-###A Note About URLs
+### A Note About URLs
 
 Note that there are some things to consider when entering URLs:
 
